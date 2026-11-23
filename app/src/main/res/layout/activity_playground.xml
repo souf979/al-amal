@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Playground : écrivez ici le layout des exemples du cours -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PlaygroundActivity">
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/s01_contact"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:autoLink="web|phone|email" />-->
+
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/txtInfo"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/s01_bienvenue"-->
+    <!--        android:textColor="#1B7A3E"-->
+    <!--        android:textSize="26sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:layout_gravity="center_horizontal" />-->
+
+
+
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Touchez la tasse pour commander"-->
+    <!--        android:textSize="22sp"/>-->
+    <!--    <ImageView-->
+    <!--        android:layout_width="140dp"-->
+    <!--        android:layout_height="140dp"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:src="@drawable/s01_ic_cafe"-->
+    <!--        android:contentDescription="Commander un cafe"-->
+    <!--        android:onClick="commanderCafe"/>-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/txtCommande"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textSize="22sp"/>-->
+
+
+    <!--    <Button-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Imprimer (2DH la page)"-->
+    <!--        android:textSize="22sp"-->
+    <!--        android:id="@+id/btnImprimer"-->
+    <!--        app:icon="@drawable/s01_ic_imprimer"/>-->
+    <!--    <Button-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Scanner (bientot)"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:enabled="false"/>-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/txtPages"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="16sp"-->
+    <!--        android:textSize="22sp"/>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:id="@+id/imgLogo"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="160dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:src="@drawable/s01_ic_poste"-->
+<!--            android:contentDescription="Logo du cybercafe"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/txtBienvenue"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Bienvenue au cybercafe Al Amal"-->
+<!--            android:textSize="30sp"-->
+<!--            android:textColor="#1B7A3E" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/s01_horaires"-->
+<!--            android:textSize="24sp"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/s01_tarif"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Votre prenom"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:textSize="22sp"-->
+<!--            android:id="@+id/edtPrenom"-->
+
+<!--            />-->
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Entrer"-->
+<!--            android:textSize="20sp"-->
+<!--            android:id="@+id/btnEntrer"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/txtSalut"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:textSize="22sp"/>-->
+
+
+<!--    </LinearLayout>-->
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/fabNouveau"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:src="@drawable/s01_ic_ajouter"-->
+<!--        android:contentDescription="Nouveau client"-->
+<!--        app:fabSize="normal"-->
+<!--        />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Options (2 DH chacune)"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <CheckBox
+        android:id="@+id/chkImpression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Impression"
+        android:textSize="22sp" />
+    <CheckBox
+        android:id="@+id/chkCasque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Casque audio"
+        android:textSize="22sp" />
+    <CheckBox
+        android:id="@+id/chkScanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scanner"
+        android:textSize="22sp" />
+    <Button
+        android:layout_width=""
+        android:layout_height=""
+    <TextView
+            android:layout_width=""
+            android:layout_height=""
+
+
+
+</FrameLayout>

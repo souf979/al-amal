@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/tp01_logo_alamal"
+            android:contentDescription="@string/tp01_logo_description"
+            >
+        </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tp01_titre"
+                android:textColor="@color/tp01_vert_alamal"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tp01_horaires"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tp01_tarif"
+                android:textSize="16sp"
+                android:textColor="@color/tp01_gris_texte"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tp01_contact"
+                android:textSize="20sp"
+                android:background="@drawable/tp01_fond_carte"
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:autoLink="web|phone|email" />
+            <EditText
+                android:id="@+id/edtPrenom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tp01_hint_prenom"
+                android:inputType="textPersonName"
+                android:textSize="22sp"
+                android:layout_marginTop="16dp" />
+            <Button
+                android:id="@+id/btnEntrer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tp01_btn_entrer"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp" />
+            <TextView
+                android:id="@+id/txtSalut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/tp01_vert_fonce"
+                android:layout_marginTop="16dp" />
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
