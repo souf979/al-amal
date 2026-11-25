@@ -3,15 +3,8 @@ package ma.ofppt.ista.alamal
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.Spinner
 import android.widget.TextView
-import android.widget.ToggleButton
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.materialswitch.MaterialSwitch
 
 // MODE COURS (Playground) : écran VIDE pour tester en direct les exemples montrés en cours.
 // Écrivez le layout dans res/layout/activity_playground.xml et le code Kotlin ci-dessous, dans onCreate.
@@ -101,8 +94,7 @@ class PlaygroundActivity : AppCompatActivity() {
 //            txtotal.text = "$option option(s) $prix DH"
 
 
-
-       //etape 2  RADIO BUTTONS
+        //etape 2  RADIO BUTTONS
 //        val grpForfait = findViewById<RadioGroup>(R.id.grpForfait)
 //        val txtForfait = findViewById<TextView>(R.id.txtForfait)
 //
@@ -191,22 +183,24 @@ class PlaygroundActivity : AppCompatActivity() {
 
 
     }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.s02_menu_principal, menu)
         return true
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val t=findViewById<TextView>(R.id.txtmenu)
-        when(item.itemId){
-            R.id.menu_tarifs-> t.text ="voilaa les tarifs"
-            R.id.menu_aide-> t.text ="appelez 0777777 pour laide"
-            R.id.menu_apropos-> t.text ="nous sommes cybercafe"
+        val t = findViewById<TextView>(R.id.txtmenu)
+        when (item.itemId) {
+            R.id.menu_tarifs -> t.text = "voilaa les tarifs"
+            R.id.menu_aide -> t.text = "appelez 0777777 pour laide"
+            R.id.menu_apropos -> t.text = "nous sommes cybercafe"
 
 
         }
         return true
     }
-    }
+}
 
 
 
