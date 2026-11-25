@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Playground : écrivez ici le layout des exemples du cours -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".PlaygroundActivity">
 
@@ -138,37 +139,152 @@
 <!--        app:fabSize="normal"-->
 <!--        />-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Options (2 DH chacune)"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-    <CheckBox
-        android:id="@+id/chkImpression"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Impression"
-        android:textSize="22sp" />
-    <CheckBox
-        android:id="@+id/chkCasque"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Casque audio"
-        android:textSize="22sp" />
-    <CheckBox
-        android:id="@+id/chkScanner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Scanner"
-        android:textSize="22sp" />
-    <Button
-        android:layout_width=""
-        android:layout_height=""
-    <TextView
-            android:layout_width=""
-            android:layout_height=""
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Options (2 DH chacune)"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold" />-->
+<!--    <CheckBox-->
+<!--        android:id="@+id/chkImpression"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Impression"-->
+<!--        android:textSize="22sp" />-->
+<!--    <CheckBox-->
+<!--        android:id="@+id/chkCasque"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Casque audio"-->
+<!--        android:textSize="22sp" />-->
+<!--    <CheckBox-->
+<!--        android:id="@+id/chkScanner"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Scanner"-->
+<!--        android:textSize="22sp" />-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/btntotal"-->
+<!--        android:textSize="22sp"-->
+<!--        android:text="calculer"-->
+<!--       />-->
+<!--    <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/txtotal"-->
+<!--         />-->
+    <!-- Étape 2 - forfait (RadioButton dans un RadioGroup) : un seul choix -->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Forfait"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/grpForfait"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/rad30"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="30 min : 6 DH"-->
+<!--            android:textSize="22sp" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/rad60"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="1 heure : 10 DH"-->
+<!--            android:textSize="22sp" />-->
+<!--        <RadioButton-->
+<!--            android:id="@+id/rad120"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="2 heures : 18 DH"-->
+<!--            android:textSize="22sp" />-->
+<!--    </RadioGroup>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/txtForfait"-->
+<!--        android:text="choisissez un forfait"-->
+<!--        android:textSize="22sp" />-->
+    <!-- Étape 3 — ToggleButton et Switch : marche ou arrêt -->
+<!--    <ToggleButton-->
+<!--        android:id="@+id/tglClim"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textOff="Clim : OFF"-->
+<!--        android:textOn="Clim : ON"-->
+<!--        android:textSize="20sp" />-->
+<!--    <com.google.android.material.materialswitch.MaterialSwitch-->
+<!--        android:id="@+id/swSilence"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Mode silencieux"-->
+<!--        android:textSize="22sp" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/txtEtat"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Clim éteinte, son activé"-->
+<!--        android:textSize="22sp" />-->
+
+<!--    <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="poste souhaite"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold"/>-->
+<!--    <Spinner-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:minHeight="56dp"-->
+<!--        android:entries="@array/s02_postes"-->
+<!--        android:id="@+id/spPostes"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="poste souhaite"-->
+<!--        android:textSize="24sp"-->
+<!--        android:id="@+id/txtPoste"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="poste(liste remplie par le code)"-->
+<!--        android:textSize="24dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="24dp"/>-->
+<!--    <Spinner-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:minHeight="56dp"-->
+<!--        android:id="@+id/spPosteCode"/>-->
+<!--    <TextView-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:text="poste choisi"-->
+<!--        android:textSize="24dp"-->
+<!--        android:id="@+id/txtPosteCode"/>-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/btnvalider"-->
+<!--        android:text="vider la liste"/>-->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtmenu"
+    android:text="touchez les 3 points ou l icone en haut a droite"
+    android:textSize="22sp"/>
 
 
 
-</FrameLayout>
+
+</LinearLayout>
