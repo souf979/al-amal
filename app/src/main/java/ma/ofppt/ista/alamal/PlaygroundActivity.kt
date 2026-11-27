@@ -259,16 +259,17 @@ class PlaygroundActivity : AppCompatActivity() {
                 when (item.itemId) {
                     R.id.popup_message -> {
                         txtimg.text = "Action : Envoyer un message"
-                        true
+
                     }
 
                     R.id.popup_ticket -> {
                         txtimg.text = "Action : Imprimer le ticket"
-                        true
+
                     }
 
-                    else -> false
+
                 }
+                true
             }
 
             // 5. Afficher le popup
