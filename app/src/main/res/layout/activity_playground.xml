@@ -277,12 +277,83 @@
 <!--        android:layout_height="wrap_content"-->
 <!--        android:id="@+id/btnvalider"-->
 <!--        android:text="vider la liste"/>-->
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/txtmenu"
-    android:text="touchez les 3 points ou l icone en haut a droite"
-    android:textSize="22sp"/>
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:id="@+id/txtmenu"-->
+<!--    android:text="touchez les 3 points ou l icone en haut a droite"-->
+<!--    android:textSize="22sp"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="appui long sur un poste"-->
+<!--        android:textSize="20sp"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="#E8F5E9"-->
+<!--        android:padding="16dp"-->
+<!--        android:id="@+id/poste3"-->
+<!--        android:text="poste 3 . yassine . 25min restantes"-->
+<!--        android:textSize="22sp"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/txtcontexte"-->
+<!--        android:textSize="22sp"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Appui long sur la reservation :"-->
+<!--        android:textSize="20sp"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/txtresa"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="#E8F5E9"-->
+<!--        android:padding="16dp"-->
+<!--        android:text="Reservation .Hayat. poste 5 . 15 h"-->
+<!--        android:textSize="22sp"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/txtaction"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="22sp"/>-->
+
+
+    <!-- Étape 8 — menu pop-up : un bouton « 3 points » à côté du poste 7 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E8F5E9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:text="Poste 7 · Mehdi"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/btnPlus"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Plus d'actions"
+            android:src="@drawable/s02_ic_plus" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp" />
+
 
 
 

@@ -1,10 +1,11 @@
 package ma.ofppt.ista.alamal
 
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
+import android.widget.ImageButton
+import android.widget.PopupMenu
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+
 
 // MODE COURS (Playground) : écran VIDE pour tester en direct les exemples montrés en cours.
 // Écrivez le layout dans res/layout/activity_playground.xml et le code Kotlin ci-dessous, dans onCreate.
@@ -180,27 +181,139 @@ class PlaygroundActivity : AppCompatActivity() {
 //        btnvider.setOnClickListener {
 //            adaptateur1.clear()
 //        }
+//        val textcontexte=findViewById<TextView>(R.id .poste3)
+//        registerForContextMenu(textcontexte)
+//        val txtresa = findViewById<TextView>(R.id.txtresa)
+//        val txtaction = findViewById<TextView>(R.id.txtaction)
+//        txtresa.setOnLongClickListener {
+//            startSupportActionMode(classdecallback(txtresa, txtaction))
+//            true
+//        }
+
+//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+//        menuInflater.inflate(R.menu.s02_menu_principal, menu)
+//        return true
+//    }
+//
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        val t = findViewById<TextView>(R.id.txtmenu)
+//        when (item.itemId) {
+//            R.id.menu_tarifs -> t.text = "voilaa les tarifs"
+//            R.id.menu_aide -> t.text = "appelez 0777777 pour laide"
+//            R.id.menu_apropos -> t.text = "nous sommes cybercafe"
+//
+//
+//        }
+//        return true
+//    }
 
 
-    }
+//    override fun onCreateContextMenu(
+//        menu: ContextMenu?,
+//        v: View?,
+//        menuInfo: ContextMenu.ContextMenuInfo?
+//    ) {
+//        menuInflater.inflate(R.menu.s02_menu_principal, menu)
+//    }
+//
+//    override fun onContextItemSelected(item: MenuItem): Boolean {
+//        val textaff = findViewById<TextView>(R.id.txtcontexte)
+//        when (item.itemId) {
+//            R.id.poste_prolonger -> textaff.text = "prolonger"
+//            R.id.poste_liberer -> textaff.text = "libere"
+//
+//        }
+//        return true
+//    }
+//override fun onCreateContextMenu(
+//    menu: ContextMenu?,
+//    v: View?,
+//    menuInfo: ContextMenu.ContextMenuInfo?
+//) {
+//    menuInflater.inflate(R.menu.menu_action, menu)
+//
+//}
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.s02_menu_principal, menu)
-        return true
-    }
+//    override fun onContextItemSelected(item: MenuItem): Boolean {
+//        val textaff = findViewById<TextView>(R.id.txtresa)
+//        when (item.itemId) {
+//            R.id.action_partager -> textaff.text = "partager"
+//            R.id.action_supprimer -> textaff.text = "supprimer"
+//
+//        }
+//        return true
+//    }
+        val img = findViewById<ImageButton>(R.id.btnPlus)
+        val txtimg = findViewById<TextView>(R.id.txtPopup)
+        img.setOnClickListener { view ->
+            // 2. Créer le PopupMenu rattaché à la vue cliquée
+            val popup = PopupMenu(this, img)
+            true
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val t = findViewById<TextView>(R.id.txtmenu)
-        when (item.itemId) {
-            R.id.menu_tarifs -> t.text = "voilaa les tarifs"
-            R.id.menu_aide -> t.text = "appelez 0777777 pour laide"
-            R.id.menu_apropos -> t.text = "nous sommes cybercafe"
+            // 3. Gonfler le menu XML (ex: menu_popup.xml)
+            popup.menuInflater.inflate(R.menu.menupopup, popup.menu)
 
 
+            // 4. Gérer le clic sur les options du popup
+            popup.setOnMenuItemClickListener { item ->
+                when (item.itemId) {
+                    R.id.popup_message -> {
+                        txtimg.text = "Action : Envoyer un message"
+                        true
+                    }
+
+                    R.id.popup_ticket -> {
+                        txtimg.text = "Action : Imprimer le ticket"
+                        true
+                    }
+
+                    else -> false
+                }
+            }
+
+            // 5. Afficher le popup
+            popup.show()
         }
-        return true
+
     }
+
+//    fun startActionMode(callback: Any) {
+//        TODO("Not yet implemented")
+//    }
+//
+//    class classdecallback(val txtresa: TextView, val txtaction: TextView) : ActionMode.Callback {
+//        override fun onActionItemClicked(mode: ActionMode?, item: MenuItem?): Boolean {
+//            txtaction.text = "vous avez choisi ${item?.title}"
+//            mode?.finish()
+//            return true
+//        }
+//
+//        override fun onCreateActionMode(
+//            mode: ActionMode?,
+//            menu: Menu?
+//        ): Boolean {
+//            mode?.menuInflater?.inflate(R.menu.s02_menu_principal, menu)
+//            return true
+//        }
+//
+//        override fun onDestroyActionMode(mode: ActionMode?) {
+//            return
+//        }
+//
+//        override fun onPrepareActionMode(
+//            mode: ActionMode?,
+//            menu: Menu?
+//        ): Boolean {
+//            return false
+//
+//        }
+
+
 }
+
+
+
+
 
 
 
